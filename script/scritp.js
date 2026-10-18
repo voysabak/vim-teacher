@@ -6,10 +6,10 @@ const initialCode = `const { data } = await client.get('/user_timeline', {
 });`;
 
 const editor = CodeMirror.fromTextArea(document.getElementById('vim-demo'), {
-  lineNumbers: true,         // Нумерация строк
-  mode: 'javascript',        // Подсветка JavaScript
-  theme: 'dracula',          // Тёмная тема
-  keyMap: 'vim',             // ВКЛЮЧАЕМ РЕЖИМ VIM!
+  lineNumbers: true,
+  mode: 'javascript',
+  theme: 'dracula',
+  keyMap: 'vim',
   matchBrackets: true,
   tabSize: 2
 });

@@ -58,7 +58,7 @@ header .start-btn:hover {
     margin-left: 5px;
 }
 
-/* Настройка высоты и шрифта CodeMirror */
+/* Settings for CodeMirror canvas */
 .CodeMirror {
   height: auto;
   font-size: 21px;
