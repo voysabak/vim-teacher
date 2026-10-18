@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Стили CodeMirror и тёмная тема (например, dracula или monokai) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/theme/dracula.min.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="logo">
+        <svg id="svg-1" width="220" height="60" viewBox="0 0 220 60" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="logo-svg">
+            <!-- Icon Mark -->
+            <g class="logo-icon">
+                <rect x="2" y="6" width="48" height="48" rx="6" fill="#97C76A" fill-opacity="0.15" stroke="#97C76A"
+                    stroke-width="2"> </rect>
+                <path d="M14 18L26 40L38 18" stroke="#97C76A" stroke-width="4.5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                <!-- Terminal Cursor Accent -->
+                <rect x="23" y="18" width="6" height="12" fill="#97C76A" class="animate-pulse"></rect>
+            </g>
+            <!-- Text Mark -->
+            <g class="logo-text-group" transform="translate(62, 0)">
+                <text x="0" y="40" font-family="'JetBrainsMono Nerd Font', monospace" font-weight="700" font-size="26"
+                    fill="#FFFFFF" letter-spacing="0.5">VIM</text>
+                <text x="56" y="40" font-family="'JetBrainsMono Nerd Font', monospace" font-weight="600" font-size="26"
+                    fill="#97C76A" letter-spacing="0.5">DORA</text>
+            </g>
+        </svg>
+    </section>
+
+    <header>
+        <h1>Learn Vim. <span>Finally make it easy.</span></h1>
+        <p>VimDora is the hands-on Vim tutorial that actually builds muscle memory.
+            <br>
+            Master Vim motions, operators, and
+            text objects through interactive lessons and real code challenges.
+        </p>
+
+        <a href="#" class="start-btn">Start Learning</a>
+
+        <div class="editor-wrapper">
+            <span>Vim Editor Demo:</span>
+            <textarea id="vim-demo"></textarea>
+        </div>
+    </header>
+
+    <!-- Основной JS CodeMirror + подсветка JavaScript + режим Vim -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/keymap/vim.min.js"></script>
+    <script src="script/scritp.js"></script>
+</body>
+
+</html>

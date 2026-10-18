@@ -1,0 +1,72 @@
+@import "colors.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: var(--black);
+  padding: 0 100px 100px 100px;
+  font-family: "JetBrainsMono Nerd Font";
+  color: #fff;
+  height: 100vh;
+}
+
+section.logo {
+  padding: 50px 0 0 0;
+}
+
+header {
+  text-align: center;
+  padding: 100px 0;
+}
+header h1 {
+  font-size: 53px;
+  margin-bottom: 50px;
+}
+header h1 span {
+  color: var(--pink);
+}
+header p {
+  font-size: 25px;
+  font-weight: 200;
+  margin-bottom: 50px;
+}
+header .start-btn {
+  text-decoration: none;
+  padding: 14px 30px;
+  background: #fff;
+  font-size: 28px;
+  color: #000;
+  font-weight: 600;
+  transition: 0.3s all;
+}
+header .start-btn:hover {
+  background: var(--blue);
+  color: #fff;
+}
+
+.editor-wrapper {
+  text-align: left;
+  max-width: 800px;
+  margin: 100px auto;
+  overflow: hidden;
+}
+
+.editor-wrapper span{
+    margin-left: 5px;
+}
+
+/* Настройка высоты и шрифта CodeMirror */
+.CodeMirror {
+  height: auto;
+  font-size: 21px;
+  padding: 15px;
+  margin-top: 5px;
+}
+
+.cm-fat-cursor .CodeMirror-cursor{
+    background: var(--orange);
+    opacity: 0.8;
+}
