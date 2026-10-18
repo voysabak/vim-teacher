@@ -1,0 +1,61 @@
+@import "colors.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--black);
+  padding: 80px 100px;
+  font-family: "JetBrainsMono Nerd Font";
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: fixed;
+}
+aside ul{
+    list-style: none;
+}
+aside ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    padding: 20px 10px;
+    margin: 7px 0;
+}
+aside ul li .list-right span{
+    background: var(--blue);
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+aside ul li:hover{
+    background: var(--orange);
+    cursor: pointer;
+}
+aside .chapter{
+    border-bottom: 2px solid var(--pink);
+    margin-bottom: 15px;
+}
+aside .chapter h6{
+    font-size: 15px;
+    color: var(--green);
+}
+
+main.workspace{
+    margin-left: 500px;
+}
+main.workspace section{
+    display: none;
+}
+main.workspace section.active{
+    display: block;
+}
