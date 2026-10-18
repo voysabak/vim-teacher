@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "JetBrainsMono Nerd Font";
 }
 
 body {
@@ -15,133 +16,110 @@ body {
   display: flex;
 }
 
-aside{
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    position: fixed;
+aside {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  position: fixed;
 }
-aside ul{
-    list-style: none;
+aside ul {
+  list-style: none;
 }
-aside ul li{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 300px;
-    padding: 20px 10px;
-    margin: 7px 0;
+aside ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  padding: 20px 10px;
+  margin: 7px 0;
 }
-aside ul li .list-right span{
-    background: var(--blue);
-    padding: 5px 8px;
-    border-radius: 4px;
+aside ul li .list-right span {
+  background: var(--blue);
+  padding: 5px 8px;
+  border-radius: 4px;
 }
-aside ul li:hover{
-    background: var(--orange);
-    cursor: pointer;
+aside ul li:hover {
+  background: var(--orange);
+  cursor: pointer;
 }
-aside ul li.active{
-    background: var(--orange);
+aside ul li.active {
+  background: var(--orange);
 }
-aside .chapter{
-    border-bottom: 2px solid var(--pink);
-    margin-bottom: 15px;
+aside .chapter {
+  border-bottom: 2px solid var(--pink);
+  margin-bottom: 15px;
 }
-aside .chapter h6{
-    font-size: 15px;
-    color: var(--green);
-}
-
-main.workspace{
-    margin-left: 500px;
-}
-main.workspace section{
-    display: none;
-}
-main.workspace section.active{
-    display: block;
+aside .chapter h6 {
+  font-size: 15px;
+  color: var(--green);
 }
 
-.lesson-content h1{
-    margin-bottom: 20px;
+main.workspace {
+  margin-left: 500px;
+}
+main.workspace section {
+  display: none;
+}
+main.workspace section.active {
+  display: block;
 }
 
-.lesson-content p{
-    margin-bottom: 20px;
+.lesson-content h1 {
+  margin-bottom: 20px;
 }
 
-/* Стили для блока с примером */
+.lesson-content p {
+  margin-bottom: 20px;
+}
+
 .example-box {
-    margin-top: 25px;
+  margin-top: 25px;
 }
-
 .example-divider {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 15px 0;
-    position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 15px 0;
+  position: relative;
 }
 
 .example-divider::before,
 .example-divider::after {
-    content: '';
-    flex: 1;
-    border-bottom: 1px solid #2d3139;
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #2d3139;
 }
 
 .example-btn {
-    background-color: #16181d;
-    border: 1px solid #2d3139;
-    color: #4ade80;
-    padding: 6px 16px;
-    border-radius: 20px;
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin: 0 15px;
-    transition: background 0.2s;
+  background: #16181d;
+  border: 1px solid #2d3139;
+  color: #4ade80;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin: 0 5px;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.2s;
 }
 
 .example-btn:hover {
-    background-color: #222630;
+  background-color: #222630;
 }
 
-/* Окно редактора */
 .example-editor {
-    background-color: #0d0f12;
-    border: 1px solid #2d3139;
-    border-radius: 8px;
-    padding: 16px;
-    font-family: 'Fira Code', 'Courier New', monospace;
-    font-size: 14px;
-    display: none; /* Скрыто по умолчанию */
-    overflow-x: auto;
+  background: #0d0f12;
+  border: 1px solid #2d3139;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 14px;
+  overflow-x: auto;
+  display: none;
 }
-
-.example-editor.active {
-    display: block; /* Показываем, когда активен */
-}
-
-/* Подсветка кода и курсора */
-.code-line {
-    white-space: pre;
-    line-height: 1.6;
-    color: #a9b7c6;
-}
-
-/* Цвет подсветки псевдо-синтаксиса */
-.keyword { color: #cc7832; }
-.string { color: #6a8759; }
-.function { color: #ffc66d; }
-
-/* Блочный курсор Vim */
-.vim-cursor {
-    background-color: #ffffff;
-    color: #000000;
-    border-radius: 2px;
+.example-editor.active{
+    display: block;
 }
