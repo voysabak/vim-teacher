@@ -12,10 +12,12 @@
         <section class="chapter">
             <h6>Basic Vim</h6>
             <ul>
-                <li class="lesson-select" href="lesson1">Intro to modes <div class="list-right"><span>modes</span></div>
+                <li class="lesson-select active" href="lesson1">Intro to modes <div class="list-right"><span>modes</span></div>
                 </li>
-                <li class="lesson-select" href="lesson2">Basic movement <div class="list-right"><span>h</span> <span>j</span> <span>k</span>
-                        <span>l</span></div>
+                <li class="lesson-select" href="lesson2">Basic movement <div class="list-right"><span>h</span>
+                        <span>j</span> <span>k</span>
+                        <span>l</span>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -31,8 +33,29 @@
         </section>
     </aside>
     <main class="workspace">
-        <section class="lesson-content" id="lesson1">
-            lesson1
+        <section class="lesson-content active" id="lesson1">
+            <h1>Introduction to Vim Modes</h1>
+            <p>
+                The first key vim concept to understand is modes.
+                <br>
+                You can switch between two primary modes: normal mode and insert mode to perform different actions.
+            </p>
+
+            <div class="example-box" id="demo-example">
+            <!-- Кнопка управления по центру -->
+            <div class="example-divider">
+                <button class="example-btn" id="toggle-btn">
+                    <span class="icon">▶</span> <span class="btn-text">show example</span>
+                </button>
+            </div>
+
+            <!-- Экран редактора (по умолчанию скрыт через CSS) -->
+            <div class="example-editor" id="editor-screen">
+                <div class="editor-content" id="code-output">
+                    <!-- Сюда JS будет рендерить код с курсором -->
+                </div>
+            </div>
+        </div>
         </section>
         <section class="lesson-content" id="lesson2">
             lesson2

@@ -41,6 +41,9 @@ aside ul li:hover{
     background: var(--orange);
     cursor: pointer;
 }
+aside ul li.active{
+    background: var(--orange);
+}
 aside .chapter{
     border-bottom: 2px solid var(--pink);
     margin-bottom: 15px;
@@ -58,4 +61,87 @@ main.workspace section{
 }
 main.workspace section.active{
     display: block;
+}
+
+.lesson-content h1{
+    margin-bottom: 20px;
+}
+
+.lesson-content p{
+    margin-bottom: 20px;
+}
+
+/* Стили для блока с примером */
+.example-box {
+    margin-top: 25px;
+}
+
+.example-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 15px 0;
+    position: relative;
+}
+
+.example-divider::before,
+.example-divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #2d3139;
+}
+
+.example-btn {
+    background-color: #16181d;
+    border: 1px solid #2d3139;
+    color: #4ade80;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0 15px;
+    transition: background 0.2s;
+}
+
+.example-btn:hover {
+    background-color: #222630;
+}
+
+/* Окно редактора */
+.example-editor {
+    background-color: #0d0f12;
+    border: 1px solid #2d3139;
+    border-radius: 8px;
+    padding: 16px;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 14px;
+    display: none; /* Скрыто по умолчанию */
+    overflow-x: auto;
+}
+
+.example-editor.active {
+    display: block; /* Показываем, когда активен */
+}
+
+/* Подсветка кода и курсора */
+.code-line {
+    white-space: pre;
+    line-height: 1.6;
+    color: #a9b7c6;
+}
+
+/* Цвет подсветки псевдо-синтаксиса */
+.keyword { color: #cc7832; }
+.string { color: #6a8759; }
+.function { color: #ffc66d; }
+
+/* Блочный курсор Vim */
+.vim-cursor {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 2px;
 }
