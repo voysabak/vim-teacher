@@ -46,16 +46,20 @@
             <!-- Interactive Demo Block -->
             <div class="example-box" id="demo-example">
                 <!-- Toggle button -->
-                 <div class="example-divider">
-                    <button class="example-btn" id="toggle-btn">
+                <div class="example-divider">
+                    <button class="example-btn" id="toggle-btn-1">
                         <span class="icon">▶</span> <span class="btn-text">show example</span>
                     </button>
-                 </div>
+                </div>
 
-                 <!-- Editor Block - display:none by default -->
-                <div class="example-editor" id="editor-screen">
+                <!-- Editor Block - display:none by default -->
+                <div class="example-editor" id="editor-screen-1">
                     <div class="editor-content" id="code-output">
                         <!-- JS will render code with cursor -->
+                        const lessonsSelectables = document.querySelectorAll(".lesson-select"); <br>
+                        const lessonsContent = document.querySelectorAll(".lesson-content"); <br>
+                        console.log(lessonsContent, lessonsSelectables); <br>
+                        <div class="vim-cursor"></div>
                     </div>
                 </div>
             </div>

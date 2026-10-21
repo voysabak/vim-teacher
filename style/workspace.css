@@ -123,3 +123,16 @@ main.workspace section.active {
 .example-editor.active{
     display: block;
 }
+.editor-content{
+  position: relative;
+}
+.editor-content .vim-cursor{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 8px;
+  height: 20px;
+  opacity: 0.5;
+  background: white;
+  display: block;
+}
